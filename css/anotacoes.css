@@ -60,3 +60,10 @@
     border-radius: 16px;
     border: 2px solid var(--border-secundary-color);
 }
+.anotacao__main_container #btnAnotacoes{
+  width: 110px;
+  margin: 20px;
+  height: 30px;
+  border-radius: 16px;
+  border: 2px solid var(--text-primary-color);
+}
