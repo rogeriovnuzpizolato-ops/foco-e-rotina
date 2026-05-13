@@ -1,0 +1,54 @@
+:root {
+  --text-primary-color: black;
+  --text-secundary-color: rgb(95, 95, 95);
+  --text-tertiary-color: rgb(233, 233, 233);
+  --button-color: rgb(0, 75, 0);
+  --button-secundary-color:rgb(235, 235, 235);
+  --border-primary-color: rgb(25, 25, 25);
+  --border-secundary-color: rgb(255, 255, 255);
+}
+
+[data-contexto="home"] {
+  --home-bg-color: linear-gradient(
+    180deg,
+    rgb(25, 25, 25) 0%,
+    rgb(0, 99, 0) 48.44%,
+    rgb(0, 179, 0)
+  );
+}
+
+[data-contexto="imersao"] {
+  --home-bg-color: linear-gradient(
+    180deg,
+    rgb(3, 3, 3) 0%,
+    rgb(0, 54, 116) 48.44%,
+    rgb(0, 109, 252)
+  );
+}
+
+[data-contexto="anotacao"] {
+  --home-bg-color: linear-gradient(
+    180deg,
+    rgb(3, 3, 3) 0%,
+    rgb(90, 0, 0) 48.44%,
+    rgb(252, 0, 0)
+  );
+}
+
+/* reset */
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+html {
+  background: var(--home-bg-color);
+  min-height: 100vh;
+  font-size: 10px;
+  padding: 15px;
+  font-family: "Exo 2", sans-serif;
+}
+
+.select{
+ border: solid 3px rgb(247, 226, 38);
+}
