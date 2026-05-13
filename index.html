@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-br" class="inicial" data-contexto="home">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="module" src="/js/script.js" defer></script>
+    <title>foco e progresso</title>
+  </head>
+  <body>
+    <header>
+      <section class="app__header-container">
+        <div class="app__tittle">
+          <h1 id="appSaudacao"></h1>
+          <p id="data-hora"></p>
+        </div>
+        <div class="app__logo">
+          <img
+            class="app_logo_start"
+            src="/img/app-logo-simp.png"
+            alt="letras F na cor branca e R na cor verde com uma seta apontado para o topo"
+          />
+        </div>
+      </section>
+    </header>
+    <nav>
+      <section class="app__nav_container">
+        <div class="app__links">
+          <a id="materias" class="botao" href="index.html">Matérias</a>
+          <a id="imersao" class="botao" href="imersao.html">Imersão</a>
+          <a id="anotacao" class="botao" href="anotacoes.html">Anotações</a>
+        </div>
+      </section>
+    </nav>
+    <main>
+      <section class="app__main">
+        <div class="app__day_focus">
+          <h2>Foco do dia</h2>
+        </div>
+        <div class="app__input">
+          <input
+            id="atividadeFoco"
+            type="text"
+            placeholder="digite suas atividades"
+          />
+          <button class="app__button_envy" id="botaoEnviar">enviar</button>
+        </div>
+      </section>
+      <section class="app__list_focus">
+        <div class="list_focus">
+          <ul id="lista-materias" class="list_focus_day">
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="app__footer">
+        <div class="text_footer">
+          <p>projeto sem fins lucrativos</p>
+          <p>produzido por: Rogério Luiz</p>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+.app__header-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.app__header-container .app__tittle {
+  color: var(--text-tertiary-color);
+  font-size: 1.6rem;
+}
+
+.app__header-container .app__logo .app_logo_start{
+  display: block;
+  width: 150px;
+}
+.app__header-container #appSaudacao{
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+.app__header-container #data-hora{
+  font-size: 1.8rem;
+  margin-top: 10px;
+}
+
+/* header ends  */
+
+.app__nav_container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app__nav_container .app__links{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 5px;
+  width: 100%;
+  height: 200px;
+  border-radius: 100px;
+  background: radial-gradient(ellipse,  rgb(119, 255, 119) 0%, rgb(0, 126, 0) 10%, rgb(10, 10, 10) 100%);
+  border: 2px solid var( --border-secundary-color) ;
+}
+
+.app__nav_container .app__links a{
+  text-align: center;
+  font-size: 1.6rem;
+  text-decoration: none;
+  padding: 5px;
+  color: var(--text-secundary-color);
+  background: var(--text-tertiary-color);
+  border-radius: 16px;
+}
+
+.app__nav_container .app__links a:hover{
+  color: var(--text-primary-color);
+}
+
+/* nav ends  */
+
+.app__main .app__day_focus{
+  text-align: center;
+  font-size: 3.2rem;
+  color: var(--text-tertiary-color);
+}
+
+.app__main .app__input{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+#atividadeFoco , .app__button_envy{
+  display: block;
+  width: 80%;
+  height: 32px;
+  border-radius: 16px;
+  text-align: center;
+ border: 2px solid var(--border-primary-color);
+}
+
+.app__list_focus .list_focus{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+  font-size: 2.4rem;
+  background: rgb(119, 255, 119);
+  border-radius: 16px;
+  border: 2px solid var(--border-secundary-color);
+}
+
+/* main ends  */
+
+.app__footer{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 64px;
+  text-align: center;
+  background: rgb(25, 25, 25);
+  color: var(--text-tertiary-color);
+  font-size: 1.6rem;
+  border-radius: 16px;
+}

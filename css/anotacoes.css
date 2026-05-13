@@ -1,0 +1,62 @@
+.app__nav_container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app__nav_container .app__links_anotacao{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 5px;
+  width: 100%;
+  height: 200px;
+  border-radius: 100px;
+  background: radial-gradient(ellipse,  rgb(255, 124, 119) 0%, rgb(90, 0, 0) 10%, rgb(10, 10, 10) 100%);
+  border: 2px solid var( --border-secundary-color) ;
+}
+
+.app__nav_container .app__links_anotacao a{
+  text-align: center;
+  font-size: 1.6rem;
+  text-decoration: none;
+  padding: 5px;
+  color: var(--text-secundary-color);
+  background: var(--text-tertiary-color);
+  border-radius: 16px;
+}
+
+.app__nav_container .app__link_imersao a:hover{
+  color: var(--text-primary-color);
+}
+
+/* navs end  */
+
+.anotacao__main_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.anotacao__main_container .anotacao__text_area {
+    text-align: center;
+    font-size: 3.6rem;
+    color: var(--text-tertiary-color);
+}
+.anotacao__main_container .anotacao__text_area textarea{
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    border-radius: 16px;
+    border: 2px solid var(--border-primary-color);
+    font-size: 2.4rem;
+}
+.anotacao__main_container .anotacoes__list_anteriores{
+    text-align: center;
+    font-size: 2.4rem;
+    padding: 10px;
+    background: rgb(255, 124, 119);
+    border-radius: 16px;
+    border: 2px solid var(--border-secundary-color);
+}
