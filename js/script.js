@@ -1,7 +1,3 @@
-import "./home.js";
-import "./imersao.js";
-import "./anotacoes.js";
-
 const appSaudacao = document.getElementById("appSaudacao");
 const dataHora = document.getElementById("data-hora");
 
@@ -62,20 +58,57 @@ document.querySelectorAll(".botao").forEach((botao) => {
   }
 });
 
-// adicao da logica da pafina home 
+// adicao da logica da pagina home
 
 const input = document.getElementById("atividadeFoco");
 const botao = document.getElementById("botaoEnviar");
 const lista = document.getElementById("lista-materias");
 
-botao.addEventListener("click", () => {
-  const valor = input.value;
+if (botao) {
+  botao.addEventListener("click", () => {
+    const valor = input.value;
 
-  if (valor.trim() === "") return;
-  const li = document.createElement("li");
-  li.textContent = valor;
+    if (valor.trim() === "") return;
+    const li = document.createElement("li");
+    li.textContent = valor;
 
-  lista.appendChild(li);
+    lista.appendChild(li);
 
-  input.value = "";
-});
+    input.value = "";
+  });
+}
+
+// adicao da logica pagina imersao
+
+const inputImersao = document.getElementById("tempoLimite");
+const botaoTimer = document.getElementById("start-timer");
+const display = document.getElementById("display");
+
+let intervalo;
+
+if (botaoTimer) {
+  botaoTimer.addEventListener("click", () => {
+    let minutos = Number(inputImersao.value);
+
+    if (minutos <= 0) return;
+    let tempo = minutos * 60;
+
+    clearInterval(intervalo);
+
+    intervalo = setInterval(() => {
+      let min = Math.floor(tempo / 60);
+      let seg = tempo % 60;
+
+      min = String(min).padStart(2, "0");
+      seg = String(seg).padStart(2, "0");
+
+      display.textContent = `${min}:${seg}`;
+      tempo--;
+
+      if (tempo < 0) {
+        clearInterval(intervalo);
+        display.textContent = "00:00";
+      }
+    }, 1000);
+  });
+}
