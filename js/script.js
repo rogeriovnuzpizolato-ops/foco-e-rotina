@@ -112,3 +112,23 @@ if (botaoTimer) {
     }, 1000);
   });
 }
+
+// adição da logica da pagina anotações
+
+const anotacoesBtn= document.getElementById("btnAnotacoes");
+const inputAnotacoes= document.getElementById("anotacoes");
+const listaAnotacoes= document.getElementById("listaAnotacoes");
+
+if(anotacoesBtn){
+  anotacoesBtn.addEventListener("click",()=>{
+    const anotacao= inputAnotacoes.value;
+    if(anotacao.trim()=== "")return;
+    
+    const anotacaoLi= document.createElement("li");
+    anotacaoLi.textContent= anotacao;
+
+    listaAnotacoes.appendChild(anotacaoLi);
+
+    inputAnotacoes.value= "";
+  })
+}
